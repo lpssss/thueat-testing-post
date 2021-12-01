@@ -12,7 +12,8 @@ def mystall_dishes():
 
 @app.route('/private/mystall', methods=['POST'])
 def mystall():
-    return Response(request.json, status=200, mimetype='application/json')
+    json_data=request.json
+    return Response(json_data, status=200, mimetype='application/json')
 
 @app.route('/')
 def index():
