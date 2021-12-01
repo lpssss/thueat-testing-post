@@ -2,4 +2,4 @@
 
 For testing POST API calls
 
-Base URL: https://thueat-testing-get.herokuapp.com/
+Base URL: https://thueat-testing-post.herokuapp.com/
