@@ -1,5 +1,5 @@
 import json
-from flask import Flask, render_template, request, Response
+from flask import Flask, render_template, request, Response,jsonify
 from flask_cors import CORS
 
 app = Flask(__name__)
@@ -12,8 +12,8 @@ def mystall_dishes():
 
 @app.route('/private/mystall', methods=['POST'])
 def mystall():
-    json_data=request.json
-    return Response(json_data, status=200, mimetype='application/json')
+    json_data=request.get_json()
+    return jsonify(json_data)
 
 @app.route('/')
 def index():
