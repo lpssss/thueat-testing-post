@@ -6,7 +6,7 @@ CORS(app)
 
 @app.route('/private/mystall', methods=['POST'])
 def mystall():
-    return Response(request.get_json(), status=200)
+    return Response(request.get_json(), status=200, mimetype='application/json')
 
 @app.route('/')
 def index():
