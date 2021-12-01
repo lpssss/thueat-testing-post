@@ -4,7 +4,7 @@ For testing POST API calls using Heroku
 
 Base URL: https://thueat-testing-post.herokuapp.com/
 
-#使用方法：
+# 使用方法：
 
 1.修改app.py,自行添加route即可（里面有例子），返回数据自己随便定就可以了
 
